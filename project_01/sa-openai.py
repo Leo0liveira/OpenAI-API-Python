@@ -10,7 +10,7 @@ def gpt_classify_sentiment(prompt, emotions, temperature=0):
     After classifying the text, respond with the emotion ONLY.'''
 
     response = client.chat.completions.create(
-        model='gpt-3.5-turbo',
+        model='gft-5-nano',
         messages=[
             {'role': 'system', 'content': system_prompt},
             {'role': 'user', 'content': prompt},
